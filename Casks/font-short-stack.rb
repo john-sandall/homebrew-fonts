@@ -1,10 +1,11 @@
-cask :v1 => 'font-short-stack' do
-  version '1.002'
-  sha256 '9f0e16e8683b2dce66edd7c3340362b554326739fbac594cabc1e9442cf5e8cc'
+cask 'font-short-stack' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/shortstack/ShortStack-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Short%20Stack'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/shortstack/ShortStack-Regular.ttf'
+  name 'Short Stack'
+  homepage 'http://www.google.com/fonts/specimen/Short+Stack'
 
   font 'ShortStack-Regular.ttf'
 end

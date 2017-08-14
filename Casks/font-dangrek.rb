@@ -1,10 +1,11 @@
-cask :v1 => 'font-dangrek' do
-  version '6.00'
-  sha256 '2148e6eaa36456d6a9cdafd19aad553366ac78a2e720556a5710812a57b47782'
+cask 'font-dangrek' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/dangrek/Dangrek.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/dangrek/Dangrek.ttf'
+  name 'Dangrek'
   homepage 'http://www.google.com/fonts/specimen/Dangrek'
-  license :ofl
 
   font 'Dangrek.ttf'
 end

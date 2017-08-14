@@ -1,10 +1,11 @@
-cask :v1 => 'font-noto-sans-linear-b' do
+cask 'font-noto-sans-linear-b' do
   version :latest
   sha256 :no_check
 
-  url 'https://www.google.com/get/noto/pkgs/NotoSansLinearB-unhinted.zip'
-  homepage 'http://www.google.com/get/noto'
-  license :apache
+  # noto-website.storage.googleapis.com was verified as official when first introduced to the cask
+  url 'https://noto-website.storage.googleapis.com/pkgs/NotoSansLinearB-unhinted.zip'
+  name 'Noto Sans Linear B'
+  homepage 'https://www.google.com/get/noto/#sans-linb'
 
   font 'NotoSansLinearB-Regular.ttf'
 end

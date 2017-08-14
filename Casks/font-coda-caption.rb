@@ -1,10 +1,11 @@
-cask :v1 => 'font-coda-caption' do
-  version '1.001'
-  sha256 'de85b46b9c25f44bed74ccb48760c0197f320112e32beb739bdddabfca4fe119'
+cask 'font-coda-caption' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/codacaption/CodaCaption-Heavy.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Coda%20Caption'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/codacaption/CodaCaption-Heavy.ttf'
+  name 'Coda Caption'
+  homepage 'http://www.google.com/fonts/specimen/Coda+Caption'
 
   font 'CodaCaption-Heavy.ttf'
 end

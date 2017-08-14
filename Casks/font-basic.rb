@@ -1,10 +1,11 @@
-cask :v1 => 'font-basic' do
-  version '1.001'
-  sha256 '57492f31f1ce7259910dfd9d5ba07e678760c507e788a311a2e0d0b05a1525b2'
+cask 'font-basic' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/basic/Basic-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/basic/Basic-Regular.ttf'
+  name 'Basic'
   homepage 'http://www.google.com/fonts/specimen/Basic'
-  license :ofl
 
   font 'Basic-Regular.ttf'
 end

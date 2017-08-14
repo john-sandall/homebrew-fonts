@@ -1,10 +1,11 @@
-cask :v1 => 'font-italianno' do
-  version '1.003'
-  sha256 'd5987ea9f323bafd7e35282e0ee938aca0a2986ca56100e657cce3a0c7f23755'
+cask 'font-italianno' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/italianno/Italianno-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/italianno/Italianno-Regular.ttf'
+  name 'Italianno'
   homepage 'http://www.google.com/fonts/specimen/Italianno'
-  license :ofl
 
   font 'Italianno-Regular.ttf'
 end

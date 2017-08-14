@@ -1,14 +1,14 @@
-cask :v1 => 'font-averia-serif-libre' do
-  # version '1.001'
+cask 'font-averia-serif-libre' do
   version :latest
   sha256 :no_check
 
+  # github.com/google/fonts was verified as official when first introduced to the cask
   url 'https://github.com/google/fonts/trunk/ofl/averiaseriflibre',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Averia Serif Libre'
   homepage 'http://www.google.com/fonts/specimen/Averia%20Serif%20Libre'
-  license :ofl
 
   font 'AveriaSerifLibre-Bold.ttf'
   font 'AveriaSerifLibre-BoldItalic.ttf'

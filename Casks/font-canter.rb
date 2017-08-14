@@ -1,10 +1,10 @@
-cask :v1 => 'font-canter' do
+cask 'font-canter' do
   version :latest
   sha256 :no_check
 
   url 'http://fontfabric.com/downfont/canter.zip'
+  name 'Canter'
   homepage 'http://fontfabric.com/canter-free-font/'
-  license :unknown
 
   font 'Canter Bold.otf'
   font 'Canter Bold 3D.otf'

@@ -1,10 +1,11 @@
-cask :v1 => 'font-margarine' do
-  version '1.000'
-  sha256 '54043d3d857af45cfe40d243dfcf138bd45f7fb452364a70925989384198d7f3'
+cask 'font-margarine' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/margarine/Margarine-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/margarine/Margarine-Regular.ttf'
+  name 'Margarine'
   homepage 'http://www.google.com/fonts/specimen/Margarine'
-  license :ofl
 
   font 'Margarine-Regular.ttf'
 end

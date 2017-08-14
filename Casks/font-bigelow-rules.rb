@@ -1,10 +1,11 @@
-cask :v1 => 'font-bigelow-rules' do
-  version '1.000'
-  sha256 '43333f35b219079e661a882b373ad462c42e657a017a60cb52af256b6f138342'
+cask 'font-bigelow-rules' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/bigelowrules/BigelowRules-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Bigelow%20Rules'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/bigelowrules/BigelowRules-Regular.ttf'
+  name 'Bigelow Rules'
+  homepage 'http://www.google.com/fonts/specimen/Bigelow+Rules'
 
   font 'BigelowRules-Regular.ttf'
 end

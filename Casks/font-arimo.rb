@@ -1,14 +1,14 @@
-cask :v1 => 'font-arimo' do
-  # version '1.23'
+cask 'font-arimo' do
   version :latest
   sha256 :no_check
 
+  # github.com/google/fonts was verified as official when first introduced to the cask
   url 'https://github.com/google/fonts/trunk/apache/arimo',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Arimo'
   homepage 'http://www.google.com/fonts/specimen/Arimo'
-  license :apache
 
   font 'Arimo-Bold.ttf'
   font 'Arimo-BoldItalic.ttf'

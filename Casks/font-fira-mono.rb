@@ -1,12 +1,15 @@
-cask :v1 => 'font-fira-mono' do
-  version '3.2'
-  sha256 'f7e490dd815c8d8943a77245bfb2172ad0630517466af5a8dfc37d863029713c'
+cask 'font-fira-mono' do
+  version '3.206,4.202'
+  sha256 'd86269657387f144d77ba12011124f30f423f70672e1576dc16f918bb16ddfe4'
 
-  url 'http://www.carrois.com/downloads/fira_mono_3_2/FiraMonoFonts3200.zip'
-  homepage 'http://www.carrois.com/fira-4-1/'
-  license :ofl
+  # github.com/mozilla/Fira was verified as official when first introduced to the cask
+  url "https://github.com/mozilla/Fira/archive/#{version.after_comma}.tar.gz"
+  appcast 'https://github.com/mozilla/Fira/releases.atom',
+          checkpoint: 'e9adcc031c4192b0568b7aeca92bd87c1ab8dc14b25cb9a57c43e89dc95efaa5'
+  name 'Fira Mono'
+  homepage 'https://mozilla.github.io/Fira/'
 
-  font 'FiraMonoFonts3200/FiraMono3200/OTF/FiraMono-Bold.otf'
-  font 'FiraMonoFonts3200/FiraMono3200/OTF/FiraMono-Medium.otf'
-  font 'FiraMonoFonts3200/FiraMono3200/OTF/FiraMono-Regular.otf'
+  font "Fira-#{version.after_comma}/otf/FiraMono-Bold.otf"
+  font "Fira-#{version.after_comma}/otf/FiraMono-Medium.otf"
+  font "Fira-#{version.after_comma}/otf/FiraMono-Regular.otf"
 end

@@ -1,10 +1,11 @@
-cask :v1 => 'font-ruslan-display' do
-  version '1.000'
-  sha256 '6d123f70ba14be9997fd6dcc05d5c0b6ea12d6141de35618de7aa6af970bd4c4'
+cask 'font-ruslan-display' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/ruslandisplay/RuslanDisplay.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Ruslan%20Display'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/ruslandisplay/RuslanDisplay.ttf'
+  name 'Ruslan Display'
+  homepage 'http://www.google.com/fonts/specimen/Ruslan+Display'
 
   font 'RuslanDisplay.ttf'
 end

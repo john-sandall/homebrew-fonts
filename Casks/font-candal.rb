@@ -1,10 +1,11 @@
-cask :v1 => 'font-candal' do
-  version '1.000'
-  sha256 '2c9cc4b8ee8eed745ca19cc07de20bc635b312893c3440b437cf7766c36743d1'
+cask 'font-candal' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/candal/Candal.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/candal/Candal.ttf'
+  name 'Candal'
   homepage 'http://www.google.com/fonts/specimen/Candal'
-  license :ofl
 
   font 'Candal.ttf'
 end

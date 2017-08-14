@@ -1,10 +1,11 @@
-cask :v1 => 'font-lateef' do
-  version '1.001'
-  sha256 '864ebe4b24bee6c88cb02a6169830b51b786a59a7b395fe5beccaf9f2c3f19c4'
+cask 'font-lateef' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/lateef/LateefRegOT.ttf'
-  homepage 'https://www.google.com/fonts/earlyaccess'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/lateef/LateefRegOT.ttf'
+  name 'Lateef'
+  homepage 'http://www.google.com/fonts/specimen/Lateef'
 
   font 'LateefRegOT.ttf'
 end

@@ -1,12 +1,10 @@
-cask :v1 => 'font-oskiblackfoot' do
+cask 'font-oskiblackfoot' do
   version :latest
   sha256 :no_check
-  # version '1.000'
-  # sha256 'b1d86bfaf02d1d61b1b32b204ee3ae57d9f7d2eccd7206596d42aec96e851089'
 
   url 'http://www.languagegeek.com/font/oskiblackfoot.zip'
+  name 'OskiBlackfoot'
   homepage 'http://www.languagegeek.com/font/fontdownload.html'
-  license :unknown
 
   font 'oskiblackfoot5.ttf'
   font 'oskiblackfootbold5.ttf'

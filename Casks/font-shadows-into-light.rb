@@ -1,10 +1,11 @@
-cask :v1 => 'font-shadows-into-light' do
-  version '001.000'
-  sha256 '1347863151acdc00fa281daaba1a3543dbce5870b55f9cf7479a15bb84007681'
+cask 'font-shadows-into-light' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/shadowsintolight/ShadowsIntoLight.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Shadows%20Into%20Light'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/shadowsintolight/ShadowsIntoLight.ttf'
+  name 'Shadows Into Light'
+  homepage 'http://www.google.com/fonts/specimen/Shadows+Into+Light'
 
   font 'ShadowsIntoLight.ttf'
 end

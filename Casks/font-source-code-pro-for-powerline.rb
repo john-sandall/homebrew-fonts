@@ -1,12 +1,13 @@
-cask :v1 => 'font-source-code-pro-for-powerline' do
+cask 'font-source-code-pro-for-powerline' do
   version :latest
   sha256 :no_check
 
   url 'https://github.com/powerline/fonts/trunk/SourceCodePro',
-      :using => :svn,
-      :trust_cert => true
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Source Code Pro for Powerline'
   homepage 'https://github.com/powerline/fonts/tree/master/SourceCodePro'
-  license :oss
 
   font 'Sauce Code Powerline Black.otf'
   font 'Sauce Code Powerline Bold.otf'

@@ -1,10 +1,11 @@
-cask :v1 => 'font-slackey' do
-  version '1.000'
-  sha256 '4dc46e960979d38e27622258f8f9a23fb1e0ba284d56666808986d598ffc380f'
+cask 'font-slackey' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/apache/slackey/Slackey.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/apache/slackey/Slackey.ttf'
+  name 'Slackey'
   homepage 'http://www.google.com/fonts/specimen/Slackey'
-  license :apache
 
   font 'Slackey.ttf'
 end

@@ -1,12 +1,13 @@
-cask :v1 => 'font-terminus' do
-  version '4.39'
-  sha256 '5d8a7075757fd1a66012fafc6bd761e5b758573ea66bc1197025f1d4eb343383'
+cask 'font-terminus' do
+  version '4.40.1'
+  sha256 'c3cb690c2935123035a0b1f3bfdd9511c282dab489cd423e161a47c592edf188'
 
   url "http://files.ax86.net/terminus-ttf/files/#{version}/terminus-ttf-#{version}.zip"
+  name 'Terminus TTF'
   homepage 'http://files.ax86.net/terminus-ttf/'
-  license :unknown
 
   font "terminus-ttf-#{version}/TerminusTTF-#{version}.ttf"
   font "terminus-ttf-#{version}/TerminusTTF-Bold-#{version}.ttf"
   font "terminus-ttf-#{version}/TerminusTTF-Italic-#{version}.ttf"
+  font "terminus-ttf-#{version}/TerminusTTF-Bold Italic-#{version}.ttf"
 end

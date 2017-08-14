@@ -1,10 +1,10 @@
-cask :v1 => 'font-aboriginal-sans' do
+cask 'font-aboriginal-sans' do
   version :latest
   sha256 :no_check
 
   url 'http://www.languagegeek.com/font/AboriginalSans.zip'
+  name 'LanguageGeek Aboriginal Sans Serif'
   homepage 'http://www.languagegeek.com/font/fontdownload.html'
-  license :unknown
 
   font 'AboriginalSansREGULAR.ttf'
   font 'AboriginalSansBOLD.ttf'

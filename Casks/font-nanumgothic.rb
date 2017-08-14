@@ -1,14 +1,14 @@
-cask :v1 => 'font-nanumgothic' do
-  # version '2.030'
+cask 'font-nanumgothic' do
   version :latest
   sha256 :no_check
 
-  url 'https://github.com/google/fonts/trunk/apache/nanumgothic',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/trunk/ofl/nanumgothic',
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Nanum Gothic'
   homepage 'https://www.google.com/fonts/earlyaccess'
-  license :oss
 
   font 'NanumGothic-Bold.ttf'
   font 'NanumGothic-ExtraBold.ttf'

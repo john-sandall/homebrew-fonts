@@ -1,10 +1,11 @@
-cask :v1 => 'font-kite-one' do
-  version '1.001'
-  sha256 '656a36a211326dec6aaee28c376d0cb690aedb7583c37eb3f4967e36832d6a67'
+cask 'font-kite-one' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/kiteone/KiteOne-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Kite%20One'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/kiteone/KiteOne-Regular.ttf'
+  name 'Kite One'
+  homepage 'http://www.google.com/fonts/specimen/Kite+One'
 
   font 'KiteOne-Regular.ttf'
 end

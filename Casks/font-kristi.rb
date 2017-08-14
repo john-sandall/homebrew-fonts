@@ -1,10 +1,11 @@
-cask :v1 => 'font-kristi' do
-  version '1.003'
-  sha256 '6c14164cd50b52d03d88728971285fe1dbf0d6ee8af6d29274b5d5026a0fb622'
+cask 'font-kristi' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/kristi/Kristi.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/kristi/Kristi.ttf'
+  name 'Kristi'
   homepage 'http://www.google.com/fonts/specimen/Kristi'
-  license :ofl
 
   font 'Kristi.ttf'
 end

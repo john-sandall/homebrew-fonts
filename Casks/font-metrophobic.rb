@@ -1,10 +1,11 @@
-cask :v1 => 'font-metrophobic' do
-  version '1.000'
-  sha256 '16c23436bdf68771702ed0adcbf2bfa33c43e51c0f15a4bfa08cd4d3832535d1'
+cask 'font-metrophobic' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/metrophobic/Metrophobic.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/metrophobic/Metrophobic-Regular.ttf'
+  name 'Metrophobic'
   homepage 'http://www.google.com/fonts/specimen/Metrophobic'
-  license :ofl
 
-  font 'Metrophobic.ttf'
+  font 'Metrophobic-Regular.ttf'
 end

@@ -1,10 +1,11 @@
-cask :v1 => 'font-lemon' do
-  version '1.002'
-  sha256 '7ded93fde4589c3cc32052da187d0bcbf023dfb53af1a8b4ce847d47ad9add33'
+cask 'font-lemon' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/lemon/Lemon-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/lemon/Lemon-Regular.ttf'
+  name 'Lemon'
   homepage 'http://www.google.com/fonts/specimen/Lemon'
-  license :ofl
 
   font 'Lemon-Regular.ttf'
 end

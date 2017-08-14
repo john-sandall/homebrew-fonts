@@ -1,10 +1,11 @@
-cask :v1 => 'font-wallpoet' do
-  version '1.000'
-  sha256 'a49f7ea2459103a76f5437944a0148566b1ed3776513de94c3293b586610ec0c'
+cask 'font-wallpoet' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/wallpoet/Wallpoet-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/wallpoet/Wallpoet-Regular.ttf'
+  name 'Wallpoet'
   homepage 'http://www.google.com/fonts/specimen/Wallpoet'
-  license :ofl
 
   font 'Wallpoet-Regular.ttf'
 end

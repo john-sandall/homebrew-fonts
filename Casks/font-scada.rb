@@ -1,14 +1,14 @@
-cask :v1 => 'font-scada' do
-  # version '3.005'
+cask 'font-scada' do
   version :latest
   sha256 :no_check
 
+  # github.com/google/fonts was verified as official when first introduced to the cask
   url 'https://github.com/google/fonts/trunk/ofl/scada',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Scada'
   homepage 'http://www.google.com/fonts/specimen/Scada'
-  license :ofl
 
   font 'Scada-Bold.ttf'
   font 'Scada-BoldItalic.ttf'

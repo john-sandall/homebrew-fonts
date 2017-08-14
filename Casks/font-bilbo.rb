@@ -1,10 +1,11 @@
-cask :v1 => 'font-bilbo' do
-  version '1.002'
-  sha256 'b4e9efa3513654859d8afcd31d2d261ab293ef50a3e2cc3891a46d830c6ac451'
+cask 'font-bilbo' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/bilbo/Bilbo-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/bilbo/Bilbo-Regular.ttf'
+  name 'Bilbo'
   homepage 'http://www.google.com/fonts/specimen/Bilbo'
-  license :ofl
 
   font 'Bilbo-Regular.ttf'
 end

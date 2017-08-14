@@ -1,10 +1,11 @@
-cask :v1 => 'font-tauri' do
-  version '1.003'
-  sha256 'fca89fc675b89363e550b1308eeede7fa0f5f4e1eb2bf9b9bb5d432c01817a39'
+cask 'font-tauri' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/tauri/Tauri-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/tauri/Tauri-Regular.ttf'
+  name 'Tauri'
   homepage 'http://www.google.com/fonts/specimen/Tauri'
-  license :ofl
 
   font 'Tauri-Regular.ttf'
 end

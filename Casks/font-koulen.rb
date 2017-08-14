@@ -1,10 +1,11 @@
-cask :v1 => 'font-koulen' do
-  version '6.00'
-  sha256 '3dafea7b3be54b04f5a5df716f9b74e4a28c43593c3ecc8ce99a984bce20e230'
+cask 'font-koulen' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/koulen/Koulen.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/koulen/Koulen.ttf'
+  name 'Koulen'
   homepage 'http://www.google.com/fonts/specimen/Koulen'
-  license :ofl
 
   font 'Koulen.ttf'
 end

@@ -1,10 +1,11 @@
-cask :v1 => 'font-ruthie' do
-  version '1.003'
-  sha256 '7c5a1bfbcd9b0bf6f709686bdcefa4b06305f60fecdd290c1c2782de31559232'
+cask 'font-ruthie' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/ruthie/Ruthie-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/ruthie/Ruthie-Regular.ttf'
+  name 'Ruthie'
   homepage 'http://www.google.com/fonts/specimen/Ruthie'
-  license :ofl
 
   font 'Ruthie-Regular.ttf'
 end

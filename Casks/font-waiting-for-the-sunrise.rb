@@ -1,10 +1,11 @@
-cask :v1 => 'font-waiting-for-the-sunrise' do
-  version '1.001'
-  sha256 'ac74e70390f5b1be6927c1e079bd6143821a362550b264c5eb7edde34f0899f4'
+cask 'font-waiting-for-the-sunrise' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/waitingforthesunrise/WaitingfortheSunrise.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Waiting%20for%20the%20Sunrise'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/waitingforthesunrise/WaitingfortheSunrise.ttf'
+  name 'Waiting for the Sunrise'
+  homepage 'http://www.google.com/fonts/specimen/Waiting+for+the+Sunrise'
 
   font 'WaitingfortheSunrise.ttf'
 end

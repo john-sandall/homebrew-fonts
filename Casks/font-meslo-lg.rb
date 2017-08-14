@@ -1,21 +1,23 @@
-cask :v1 => 'font-meslo-lg' do
-  version '1.21'
+cask 'font-meslo-lg' do
+  version '1.2.1'
   sha256 'd0bcb7668dda8fa1a0f8162d626adb434c32854e243b5bd52a717cf569af08d0'
 
-  url 'https://github.com/andreberg/Meslo-Font/raw/master/dist/v1.2.1/Meslo%20LG%20v1.2.1.zip'
+  url "https://github.com/andreberg/Meslo-Font/raw/master/dist/v#{version}/Meslo%20LG%20v#{version}.zip"
+  appcast 'https://github.com/andreberg/Meslo-Font/releases.atom',
+          checkpoint: '84dd967d1397882553436c1214821a90861a557490bfacc335f16a272db4e812'
+  name 'Meslo LG'
   homepage 'https://github.com/andreberg/Meslo-Font'
-  license :oss
 
-  font 'Meslo LG v1.2.1/MesloLGL-Bold.ttf'
-  font 'Meslo LG v1.2.1/MesloLGL-BoldItalic.ttf'
-  font 'Meslo LG v1.2.1/MesloLGL-Italic.ttf'
-  font 'Meslo LG v1.2.1/MesloLGL-Regular.ttf'
-  font 'Meslo LG v1.2.1/MesloLGM-Bold.ttf'
-  font 'Meslo LG v1.2.1/MesloLGM-BoldItalic.ttf'
-  font 'Meslo LG v1.2.1/MesloLGM-Italic.ttf'
-  font 'Meslo LG v1.2.1/MesloLGM-Regular.ttf'
-  font 'Meslo LG v1.2.1/MesloLGS-Bold.ttf'
-  font 'Meslo LG v1.2.1/MesloLGS-BoldItalic.ttf'
-  font 'Meslo LG v1.2.1/MesloLGS-Italic.ttf'
-  font 'Meslo LG v1.2.1/MesloLGS-Regular.ttf'
+  font "Meslo LG v#{version}/MesloLGL-Bold.ttf"
+  font "Meslo LG v#{version}/MesloLGL-BoldItalic.ttf"
+  font "Meslo LG v#{version}/MesloLGL-Italic.ttf"
+  font "Meslo LG v#{version}/MesloLGL-Regular.ttf"
+  font "Meslo LG v#{version}/MesloLGM-Bold.ttf"
+  font "Meslo LG v#{version}/MesloLGM-BoldItalic.ttf"
+  font "Meslo LG v#{version}/MesloLGM-Italic.ttf"
+  font "Meslo LG v#{version}/MesloLGM-Regular.ttf"
+  font "Meslo LG v#{version}/MesloLGS-Bold.ttf"
+  font "Meslo LG v#{version}/MesloLGS-BoldItalic.ttf"
+  font "Meslo LG v#{version}/MesloLGS-Italic.ttf"
+  font "Meslo LG v#{version}/MesloLGS-Regular.ttf"
 end

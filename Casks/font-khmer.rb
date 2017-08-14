@@ -1,10 +1,11 @@
-cask :v1 => 'font-khmer' do
-  version '2.00'
-  sha256 'cc88eae47fe7875f6a0ad2135e01e5910dacebed03445c4f8d1951f9cf69e3d1'
+cask 'font-khmer' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/khmer/Khmer.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/khmer/Khmer.ttf'
+  name 'Khmer'
   homepage 'http://www.google.com/fonts/specimen/Khmer'
-  license :ofl
 
   font 'Khmer.ttf'
 end

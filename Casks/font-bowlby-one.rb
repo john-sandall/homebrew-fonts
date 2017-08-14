@@ -1,10 +1,11 @@
-cask :v1 => 'font-bowlby-one' do
-  version '1.000'
-  sha256 'f126ffc989945ec678659d054b5ecdd9ca2d14a768c5f25ac5c891316da3a8b3'
+cask 'font-bowlby-one' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/bowlbyone/BowlbyOne-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Bowlby%20One'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/bowlbyone/BowlbyOne-Regular.ttf'
+  name 'Bowlby One'
+  homepage 'http://www.google.com/fonts/specimen/Bowlby+One'
 
   font 'BowlbyOne-Regular.ttf'
 end

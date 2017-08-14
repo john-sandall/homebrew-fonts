@@ -1,10 +1,11 @@
-cask :v1 => 'font-noto-sans-old-turkic' do
+cask 'font-noto-sans-old-turkic' do
   version :latest
   sha256 :no_check
 
-  url 'https://www.google.com/get/noto/pkgs/NotoSansOldTurkic-unhinted.zip'
-  homepage 'http://www.google.com/get/noto'
-  license :apache
+  # noto-website.storage.googleapis.com was verified as official when first introduced to the cask
+  url 'https://noto-website.storage.googleapis.com/pkgs/NotoSansOldTurkic-unhinted.zip'
+  name 'Noto Sans Old Turkic'
+  homepage 'https://www.google.com/get/noto/#sans-orkh'
 
   font 'NotoSansOldTurkic-Regular.ttf'
 end

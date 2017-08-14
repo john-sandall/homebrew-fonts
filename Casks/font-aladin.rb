@@ -1,10 +1,11 @@
-cask :v1 => 'font-aladin' do
-  version '1.000'
-  sha256 '06229c4ccf2a1267210c39a7073e206da16fd9edadf84e9c96a7aa998899f9fa'
+cask 'font-aladin' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/aladin/Aladin-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/aladin/Aladin-Regular.ttf'
+  name 'Aladin'
   homepage 'http://www.google.com/fonts/specimen/Aladin'
-  license :ofl
 
   font 'Aladin-Regular.ttf'
 end

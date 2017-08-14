@@ -1,14 +1,14 @@
-cask :v1 => 'font-im-fell-french-canon' do
-  # version '3.00'
+cask 'font-im-fell-french-canon' do
   version :latest
   sha256 :no_check
 
+  # github.com/google/fonts was verified as official when first introduced to the cask
   url 'https://github.com/google/fonts/trunk/ofl/imfellfrenchcanon',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'IM Fell French Canon'
   homepage 'http://www.google.com/fonts/specimen/IM%20Fell%20French%20Canon'
-  license :ofl
 
   font 'IMFeFCit28P.ttf'
   font 'IMFeFCrm28P.ttf'

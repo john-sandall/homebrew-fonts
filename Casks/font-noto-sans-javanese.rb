@@ -1,10 +1,11 @@
-cask :v1 => 'font-noto-sans-javanese' do
+cask 'font-noto-sans-javanese' do
   version :latest
   sha256 :no_check
 
-  url 'https://www.google.com/get/noto/pkgs/NotoSansJavanese-unhinted.zip'
-  homepage 'http://www.google.com/get/noto'
-  license :apache
+  # noto-website.storage.googleapis.com was verified as official when first introduced to the cask
+  url 'https://noto-website.storage.googleapis.com/pkgs/NotoSansJavanese-unhinted.zip'
+  name 'Noto Sans Javanese'
+  homepage 'https://www.google.com/get/noto/#sans-java'
 
   font 'NotoSansJavanese-Regular.ttf'
 end

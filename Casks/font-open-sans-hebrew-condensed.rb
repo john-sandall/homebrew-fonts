@@ -1,14 +1,14 @@
-cask :v1 => 'font-open-sans-hebrew-condensed' do
-  # version '2.001'
+cask 'font-open-sans-hebrew-condensed' do
   version :latest
   sha256 :no_check
 
+  # github.com/google/fonts was verified as official when first introduced to the cask
   url 'https://github.com/google/fonts/trunk/apache/opensanshebrewcondensed',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Open Sans Hebrew Condensed'
   homepage 'https://www.google.com/fonts/earlyaccess'
-  license :oss
 
   font 'OpenSansHebrewCondensed-Bold.ttf'
   font 'OpenSansHebrewCondensed-BoldItalic.ttf'

@@ -1,10 +1,11 @@
-cask :v1 => 'font-bentham' do
-  version '002.001'
-  sha256 '40e607c31bbd253acc04a7f0772d2a4c1cbd693771f5c3585ce255522057a524'
+cask 'font-bentham' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/bentham/Bentham-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/bentham/Bentham-Regular.ttf'
+  name 'Bentham'
   homepage 'http://www.google.com/fonts/specimen/Bentham'
-  license :ofl
 
   font 'Bentham-Regular.ttf'
 end

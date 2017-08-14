@@ -1,11 +1,10 @@
-cask :v1 => 'font-alef' do
-  # version '1.001'
+cask 'font-alef' do
   version :latest
   sha256 :no_check
 
   url 'http://alef.hagilda.com/Alef.zip'
+  name 'Alef'
   homepage 'http://alef.hagilda.com/'
-  license :ofl
 
   font 'TTF/Alef-Bold.ttf'
   font 'TTF/Alef-Regular.ttf'

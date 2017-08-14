@@ -1,17 +1,17 @@
-cask :v1 => 'font-ricty-diminished' do
-  version '3.2.4'
-  sha256 'd8ae378f6333080da83ba1ab3a7cb5f3ed0982a2e633de651b9510cb7dcd3bfc'
+cask 'font-ricty-diminished' do
+  version '4.0.1'
+  sha256 'b32ba2877651df31914797cc4938b98d726d4777ecb2064c9dbbb620efcff24f'
 
-  url 'https://github.com/yascentur/RictyDiminished/archive/3.2.4.zip'
-  homepage 'https://github.com/yascentur/RictyDiminished'
-  license :oss
+  url "http://www.rs.tus.ac.jp/yyusa/ricty_diminished/ricty_diminished-#{version}.tar.gz"
+  name 'Ricty Diminished'
+  homepage 'http://www.rs.tus.ac.jp/yyusa/ricty_diminished.html'
 
-  font 'RictyDiminished-3.2.4/RictyDiminished-Bold.ttf'
-  font 'RictyDiminished-3.2.4/RictyDiminished-BoldOblique.ttf'
-  font 'RictyDiminished-3.2.4/RictyDiminished-Oblique.ttf'
-  font 'RictyDiminished-3.2.4/RictyDiminished-Regular.ttf'
-  font 'RictyDiminished-3.2.4/RictyDiminishedDiscord-Bold.ttf'
-  font 'RictyDiminished-3.2.4/RictyDiminishedDiscord-BoldOblique.ttf'
-  font 'RictyDiminished-3.2.4/RictyDiminishedDiscord-Oblique.ttf'
-  font 'RictyDiminished-3.2.4/RictyDiminishedDiscord-Regular.ttf'
+  font 'RictyDiminished-Bold.ttf'
+  font 'RictyDiminished-BoldOblique.ttf'
+  font 'RictyDiminished-Oblique.ttf'
+  font 'RictyDiminished-Regular.ttf'
+  font 'RictyDiminishedDiscord-Bold.ttf'
+  font 'RictyDiminishedDiscord-BoldOblique.ttf'
+  font 'RictyDiminishedDiscord-Oblique.ttf'
+  font 'RictyDiminishedDiscord-Regular.ttf'
 end

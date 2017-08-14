@@ -1,10 +1,11 @@
-cask :v1 => 'font-aclonica' do
-  version '1.000'
-  sha256 'aec4ac0902f0d9597761557c59e4e0d5c9ac117c70d106ca1ae806082f6b234d'
+cask 'font-aclonica' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/apache/aclonica/Aclonica.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/apache/aclonica/Aclonica-Regular.ttf'
+  name 'Aclonica'
   homepage 'http://www.google.com/fonts/specimen/Aclonica'
-  license :apache
 
   font 'Aclonica.ttf'
 end

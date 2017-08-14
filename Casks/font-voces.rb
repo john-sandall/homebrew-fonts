@@ -1,10 +1,11 @@
-cask :v1 => 'font-voces' do
-  version '1.001'
-  sha256 '47246f5c1d5104a2c9775a1e20b48a83d37f13cf2cd3c4a380414d85a572f1d1'
+cask 'font-voces' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/voces/Voces-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/voces/Voces-Regular.ttf'
+  name 'Voces'
   homepage 'http://www.google.com/fonts/specimen/Voces'
-  license :ofl
 
   font 'Voces-Regular.ttf'
 end

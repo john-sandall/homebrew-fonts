@@ -1,10 +1,11 @@
-cask :v1 => 'font-balthazar' do
-  version '1.000'
-  sha256 '4aa52d4d4a747b7688bdba35c764a7006d4d2915e6159aa1b8c979c9f4dc7b2d'
+cask 'font-balthazar' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/balthazar/Balthazar-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/balthazar/Balthazar-Regular.ttf'
+  name 'Balthazar'
   homepage 'http://www.google.com/fonts/specimen/Balthazar'
-  license :ofl
 
   font 'Balthazar-Regular.ttf'
 end

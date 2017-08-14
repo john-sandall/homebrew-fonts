@@ -1,11 +1,14 @@
-cask :v1 => 'font-georgia' do
+cask 'font-georgia' do
   version '2.05'
   sha256 '2c2c7dcda6606ea5cf08918fb7cd3f3359e9e84338dc690013f20cd42e930301'
 
-  url 'http://downloads.sourceforge.net/sourceforge/corefonts/georgi32.exe'
+  url 'https://downloads.sourceforge.net/corefonts/georgi32.exe'
+  appcast 'https://sourceforge.net/projects/corefonts/rss',
+          checkpoint: '8d659740c2893218b3e1d16918a9372b2838f5e0e7ef0405d3103f2d563e7bd1'
+  name 'Georgia'
   homepage 'http://sourceforge.net/projects/corefonts/files/the%20fonts/final/'
-  license :oss
-  depends_on :formula => 'cabextract'
+
+  depends_on formula: 'cabextract'
 
   font 'Georgiaz.TTF'
   font 'Georgiab.TTF'

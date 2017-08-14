@@ -1,10 +1,11 @@
-cask :v1 => 'font-shanti' do
-  version '1.000'
-  sha256 'c08c43d1d03cc84ee4151b239f43fcda0395964b34b7ac5cf9197bfd3c17854d'
+cask 'font-shanti' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/shanti/Shanti-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/shanti/Shanti-Regular.ttf'
+  name 'Shanti'
   homepage 'http://www.google.com/fonts/specimen/Shanti'
-  license :ofl
 
   font 'Shanti-Regular.ttf'
 end

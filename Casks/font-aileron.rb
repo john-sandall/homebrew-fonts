@@ -1,10 +1,10 @@
-cask :v1 => 'font-aileron' do
+cask 'font-aileron' do
   version :latest
   sha256 :no_check
 
   url 'http://dotcolon.net/DL/font/aileron.zip'
+  name 'Aileron'
   homepage 'http://dotcolon.net/font/aileron/'
-  license :unknown
 
   font 'Aileron-Black.otf'
   font 'Aileron-BlackItalic.otf'

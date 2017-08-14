@@ -1,10 +1,11 @@
-cask :v1 => 'font-port-lligat-slab' do
-  version '1.002'
-  sha256 '70edb02d7c38cde09b379f9101322fb93189a35276e79eb15c240780bd3b4af7'
+cask 'font-port-lligat-slab' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/portlligatslab/PortLligatSlab-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Port%20Lligat%20Slab'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/portlligatslab/PortLligatSlab-Regular.ttf'
+  name 'Port Lligat Slab'
+  homepage 'http://www.google.com/fonts/specimen/Port+Lligat+Slab'
 
   font 'PortLligatSlab-Regular.ttf'
 end

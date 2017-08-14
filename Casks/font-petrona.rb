@@ -1,10 +1,11 @@
-cask :v1 => 'font-petrona' do
-  version '1.001'
-  sha256 '5ff9703955f6059f123d3272589b03bb95238a1d05a4efc1429e2347b42521e7'
+cask 'font-petrona' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/petrona/Petrona-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/petrona/Petrona-Regular.ttf'
+  name 'Petrona'
   homepage 'http://www.google.com/fonts/specimen/Petrona'
-  license :ofl
 
   font 'Petrona-Regular.ttf'
 end

@@ -1,10 +1,11 @@
-cask :v1 => 'font-metal-mania' do
-  version '1.002'
-  sha256 '4b95f0e55b291990c26a7b68818b20c1b728a8be05a34982b7bb4736c46c19ea'
+cask 'font-metal-mania' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/metalmania/MetalMania-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Metal%20Mania'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/metalmania/MetalMania-Regular.ttf'
+  name 'Metal Mania'
+  homepage 'http://www.google.com/fonts/specimen/Metal+Mania'
 
   font 'MetalMania-Regular.ttf'
 end

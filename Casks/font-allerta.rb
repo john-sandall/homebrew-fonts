@@ -1,10 +1,11 @@
-cask :v1 => 'font-allerta' do
-  version '1.0'
-  sha256 '9c7a63f78f944353b422abbb641c479503f5292a39d1ea932dc4186fd82b974f'
+cask 'font-allerta' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/allerta/Allerta-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/allerta/Allerta-Regular.ttf'
+  name 'Allerta'
   homepage 'http://www.google.com/fonts/specimen/Allerta'
-  license :ofl
 
   font 'Allerta-Regular.ttf'
 end

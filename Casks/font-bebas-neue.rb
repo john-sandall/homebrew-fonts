@@ -1,10 +1,10 @@
-cask :v1 => 'font-bebas-neue' do
+cask 'font-bebas-neue' do
   version :latest
   sha256 :no_check
 
   url 'http://fontfabric.com/downfont/bebas.zip'
+  name 'Bebas Neue'
   homepage 'http://fontfabric.com/bebas-neue/'
-  license :unknown
 
   font 'BebasNeue Bold.otf'
   font 'BebasNeue Book.otf'

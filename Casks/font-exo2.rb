@@ -1,14 +1,14 @@
-cask :v1 => 'font-exo2' do
-  # version '1.001'
+cask 'font-exo2' do
   version :latest
   sha256 :no_check
 
-  url 'https://github.com/google/fonts/trunk/apache/exo2',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/trunk/ofl/exo2',
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Exo 2'
   homepage 'http://www.google.com/fonts/specimen/Exo%202'
-  license :oss
 
   font 'Exo2-Black.ttf'
   font 'Exo2-BlackItalic.ttf'

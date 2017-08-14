@@ -1,14 +1,14 @@
-cask :v1 => 'font-caudex' do
-  # version '1.01'
+cask 'font-caudex' do
   version :latest
   sha256 :no_check
 
+  # github.com/google/fonts was verified as official when first introduced to the cask
   url 'https://github.com/google/fonts/trunk/ofl/caudex',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Caudex'
   homepage 'http://www.google.com/fonts/specimen/Caudex'
-  license :ofl
 
   font 'Caudex-Bold.ttf'
   font 'Caudex-BoldItalic.ttf'

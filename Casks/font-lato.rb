@@ -1,10 +1,10 @@
-cask :v1 => 'font-lato' do
+cask 'font-lato' do
   version :latest
   sha256 :no_check
 
   url 'http://www.latofonts.com/download/Lato2OFL.zip'
+  name 'Lato'
   homepage 'http://www.latofonts.com/'
-  license :ofl
 
   font 'Lato2OFL/Lato-Black.ttf'
   font 'Lato2OFL/Lato-BlackItalic.ttf'

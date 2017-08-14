@@ -1,14 +1,14 @@
-cask :v1 => 'font-padauk' do
-  # version '2.8'
+cask 'font-padauk' do
   version :latest
   sha256 :no_check
 
-  url 'https://github.com/google/fonts/trunk/apache/padauk',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/trunk/ofl/padauk',
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Padauk'
   homepage 'https://www.google.com/fonts/earlyaccess'
-  license :oss
 
   font 'Padauk-Bold.ttf'
   font 'Padauk-Regular.ttf'

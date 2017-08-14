@@ -1,10 +1,11 @@
-cask :v1 => 'font-noto-serif-thai' do
+cask 'font-noto-serif-thai' do
   version :latest
   sha256 :no_check
 
-  url 'https://www.google.com/get/noto/pkgs/NotoSerifThai-hinted.zip'
-  homepage 'http://www.google.com/get/noto'
-  license :apache
+  # noto-website.storage.googleapis.com was verified as official when first introduced to the cask
+  url 'https://noto-website.storage.googleapis.com/pkgs/NotoSerifThai-unhinted.zip'
+  name 'Noto Serif Thai'
+  homepage 'https://www.google.com/get/noto/#serif-thai'
 
   font 'NotoSerifThai-Bold.ttf'
   font 'NotoSerifThai-Regular.ttf'

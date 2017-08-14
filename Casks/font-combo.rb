@@ -1,10 +1,11 @@
-cask :v1 => 'font-combo' do
-  version '1.001'
-  sha256 'e714674117c2864bf7407e2ebfafb11e581e97480286fa01b419adda94d08686'
+cask 'font-combo' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/combo/Combo-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/combo/Combo-Regular.ttf'
+  name 'Combo'
   homepage 'http://www.google.com/fonts/specimen/Combo'
-  license :ofl
 
   font 'Combo-Regular.ttf'
 end

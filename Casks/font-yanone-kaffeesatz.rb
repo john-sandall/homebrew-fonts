@@ -1,14 +1,14 @@
-cask :v1 => 'font-yanone-kaffeesatz' do
-  # version '1.100'
+cask 'font-yanone-kaffeesatz' do
   version :latest
   sha256 :no_check
 
-  url 'https://github.com/google/fonts/trunk/ofl/fonts/yanonekaffeesatz',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/trunk/ofl/yanonekaffeesatz',
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Yanone Kaffeesatz'
   homepage 'http://www.google.com/fonts/specimen/Yanone%20Kaffeesatz'
-  license :ofl
 
   font 'YanoneKaffeesatz-Bold.ttf'
   font 'YanoneKaffeesatz-ExtraLight.ttf'

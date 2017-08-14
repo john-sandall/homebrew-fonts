@@ -1,14 +1,14 @@
-cask :v1 => 'font-playfair-display-sc' do
-  # version '1.004'
+cask 'font-playfair-display-sc' do
   version :latest
   sha256 :no_check
 
+  # github.com/google/fonts was verified as official when first introduced to the cask
   url 'https://github.com/google/fonts/trunk/ofl/playfairdisplaysc',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Playfair Display SC'
   homepage 'http://www.google.com/fonts/specimen/Playfair%20Display%20SC'
-  license :ofl
 
   font 'PlayfairDisplaySC-Black.ttf'
   font 'PlayfairDisplaySC-BlackItalic.ttf'

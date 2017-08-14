@@ -1,10 +1,11 @@
-cask :v1 => 'font-mrs-saint-delafield' do
-  version '1.001'
-  sha256 '67a7abc298ce9d368b2c00fcbff52ec54be948889b8a59032ae80ca3322e5b34'
+cask 'font-mrs-saint-delafield' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/mrssaintdelafield/MrsSaintDelafield-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Mrs%20Saint%20Delafield'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/mrssaintdelafield/MrsSaintDelafield-Regular.ttf'
+  name 'Mrs Saint Delafield'
+  homepage 'http://www.google.com/fonts/specimen/Mrs+Saint+Delafield'
 
   font 'MrsSaintDelafield-Regular.ttf'
 end

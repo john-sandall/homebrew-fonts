@@ -1,10 +1,11 @@
-cask :v1 => 'font-herr-von-muellerhoff' do
-  version '1.000'
-  sha256 'ba8ac10807a79462b7c8265b2eebb8419e5017fdc1a5828b1a071d9e8478772e'
+cask 'font-herr-von-muellerhoff' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/herrvonmuellerhoff/HerrVonMuellerhoff-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Herr%20Von%20Muellerhoff'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/herrvonmuellerhoff/HerrVonMuellerhoff-Regular.ttf'
+  name 'Herr Von Muellerhoff'
+  homepage 'http://www.google.com/fonts/specimen/Herr+Von+Muellerhoff'
 
   font 'HerrVonMuellerhoff-Regular.ttf'
 end

@@ -1,10 +1,11 @@
-cask :v1 => 'font-reenie-beanie' do
-  version '1.000'
-  sha256 '9bdbb4afa5560a7e386de9fd25f7cc172fa1c275f7f0d59699dc60841677ced9'
+cask 'font-reenie-beanie' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/reeniebeanie/ReenieBeanie.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Reenie%20Beanie'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/reeniebeanie/ReenieBeanie.ttf'
+  name 'Reenie Beanie'
+  homepage 'http://www.google.com/fonts/specimen/Reenie+Beanie'
 
   font 'ReenieBeanie.ttf'
 end

@@ -1,10 +1,11 @@
-cask :v1 => 'font-belleza' do
-  version '1.001'
-  sha256 'b468c849332758ce5b43c0b117b541105778653e9df12e3112e48888e76adf88'
+cask 'font-belleza' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/belleza/Belleza-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/belleza/Belleza-Regular.ttf'
+  name 'Belleza'
   homepage 'http://www.google.com/fonts/specimen/Belleza'
-  license :ofl
 
   font 'Belleza-Regular.ttf'
 end

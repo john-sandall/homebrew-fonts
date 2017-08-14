@@ -1,10 +1,11 @@
-cask :v1 => 'font-underdog' do
-  version '1.001'
-  sha256 '33f9aee5b2aaeb85e1f433fb21916d0c6dbae74e23b94d978b8131bdbddc40c6'
+cask 'font-underdog' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/underdog/Underdog-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/underdog/Underdog-Regular.ttf'
+  name 'Underdog'
   homepage 'http://www.google.com/fonts/specimen/Underdog'
-  license :ofl
 
   font 'Underdog-Regular.ttf'
 end

@@ -1,10 +1,11 @@
-cask :v1 => 'font-yellowtail' do
-  version '001.001'
-  sha256 'a8d138d330049598e4730599ef32c018e2f99897ce7d9a98eff0b1612011f8b1'
+cask 'font-yellowtail' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/apache/yellowtail/Yellowtail-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/apache/yellowtail/Yellowtail-Regular.ttf'
+  name 'Yellowtail'
   homepage 'http://www.google.com/fonts/specimen/Yellowtail'
-  license :apache
 
   font 'Yellowtail-Regular.ttf'
 end

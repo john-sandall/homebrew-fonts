@@ -1,10 +1,11 @@
-cask :v1 => 'font-chelsea-market' do
-  version '1.001'
-  sha256 '7243be29a2d74e6a826e1091f74c89e58cc8010047c6db8de13f616e81b1f5f2'
+cask 'font-chelsea-market' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/chelseamarket/ChelseaMarket-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Chelsea%20Market'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/chelseamarket/ChelseaMarket-Regular.ttf'
+  name 'Chelsea Market'
+  homepage 'http://www.google.com/fonts/specimen/Chelsea+Market'
 
   font 'ChelseaMarket-Regular.ttf'
 end

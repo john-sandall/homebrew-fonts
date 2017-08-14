@@ -1,14 +1,14 @@
-cask :v1 => 'font-alegreya' do
-  # version '1.003'
+cask 'font-alegreya' do
   version :latest
   sha256 :no_check
 
+  # github.com/google/fonts was verified as official when first introduced to the cask
   url 'https://github.com/google/fonts/trunk/ofl/alegreya',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Alegreya'
   homepage 'http://www.google.com/fonts/specimen/Alegreya'
-  license :ofl
 
   font 'Alegreya-Black.ttf'
   font 'Alegreya-BlackItalic.ttf'

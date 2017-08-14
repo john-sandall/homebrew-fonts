@@ -1,10 +1,11 @@
-cask :v1 => 'font-poiret-one' do
-  version '1.001'
-  sha256 '7529dd3270b310bb6d6f16556765870c6cf7f601994e5ad1407305b08236ddeb'
+cask 'font-poiret-one' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/poiretone/PoiretOne-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Poiret%20One'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/poiretone/PoiretOne-Regular.ttf'
+  name 'Poiret One'
+  homepage 'http://www.google.com/fonts/specimen/Poiret+One'
 
   font 'PoiretOne-Regular.ttf'
 end

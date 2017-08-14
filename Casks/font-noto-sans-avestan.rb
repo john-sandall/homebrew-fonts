@@ -1,10 +1,11 @@
-cask :v1 => 'font-noto-sans-avestan' do
+cask 'font-noto-sans-avestan' do
   version :latest
   sha256 :no_check
 
-  url 'https://www.google.com/get/noto/pkgs/NotoSansAvestan-unhinted.zip'
-  homepage 'http://www.google.com/get/noto'
-  license :apache
+  # noto-website.storage.googleapis.com was verified as official when first introduced to the cask
+  url 'https://noto-website.storage.googleapis.com/pkgs/NotoSansAvestan-unhinted.zip'
+  name 'Noto Sans Avestan'
+  homepage 'https://www.google.com/get/noto/#sans-avst'
 
   font 'NotoSansAvestan-Regular.ttf'
 end

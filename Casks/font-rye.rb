@@ -1,10 +1,11 @@
-cask :v1 => 'font-rye' do
-  version '1.001'
-  sha256 'b7edee5e615ae1b6b07e9d030c1309152bf3672a0e8a2a46293e273730f5adba'
+cask 'font-rye' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/rye/Rye-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/rye/Rye-Regular.ttf'
+  name 'Rye'
   homepage 'http://www.google.com/fonts/specimen/Rye'
-  license :ofl
 
   font 'Rye-Regular.ttf'
 end

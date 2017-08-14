@@ -1,10 +1,11 @@
-cask :v1 => 'font-kdam-thmor' do
-  version '1.10'
-  sha256 'adf234c417f867e6083569b0eedcdafe68762f1bfc1233bdc6125ad5adde7dcd'
+cask 'font-kdam-thmor' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/kdamthmor/KdamThmor-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Kdam%20Thmor'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/kdamthmor/KdamThmor-Regular.ttf'
+  name 'Kdam Thmor'
+  homepage 'http://www.google.com/fonts/specimen/Kdam+Thmor'
 
   font 'KdamThmor-Regular.ttf'
 end

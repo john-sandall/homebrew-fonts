@@ -1,10 +1,11 @@
-cask :v1 => 'font-miltonian-tattoo' do
-  version '1.005'
-  sha256 '85f6f41a5158294b195613f7e9977f3edc7a8e1abb9666a288591e01f0051ed0'
+cask 'font-miltonian-tattoo' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/miltoniantattoo/MiltonianTattoo-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Miltonian%20Tattoo'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/miltoniantattoo/MiltonianTattoo-Regular.ttf'
+  name 'Miltonian Tattoo'
+  homepage 'http://www.google.com/fonts/specimen/Miltonian+Tattoo'
 
   font 'MiltonianTattoo-Regular.ttf'
 end

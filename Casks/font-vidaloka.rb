@@ -1,10 +1,11 @@
-cask :v1 => 'font-vidaloka' do
-  version '1.011'
-  sha256 '56d8210544636152b1f34d6cfca3cf22eaaaa141a010112aca3196d75e5b6ff0'
+cask 'font-vidaloka' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/vidaloka/Vidaloka-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/vidaloka/Vidaloka-Regular.ttf'
+  name 'Vidaloka'
   homepage 'http://www.google.com/fonts/specimen/Vidaloka'
-  license :ofl
 
   font 'Vidaloka-Regular.ttf'
 end

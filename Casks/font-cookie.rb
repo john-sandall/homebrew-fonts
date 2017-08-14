@@ -1,10 +1,11 @@
-cask :v1 => 'font-cookie' do
-  version '1.004'
-  sha256 '9daf3cc9e5efe1b65094cdf1f14729ef6f07a70c27ee0679bf7f544a828b080e'
+cask 'font-cookie' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/cookie/Cookie-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/cookie/Cookie-Regular.ttf'
+  name 'Cookie'
   homepage 'http://www.google.com/fonts/specimen/Cookie'
-  license :ofl
 
   font 'Cookie-Regular.ttf'
 end

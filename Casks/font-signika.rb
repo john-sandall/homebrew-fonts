@@ -1,10 +1,10 @@
-cask :v1 => 'font-signika' do
+cask 'font-signika' do
   version :latest
   sha256 :no_check
 
   url 'http://fontfabric.com/downfont/signika.zip'
+  name 'Signika'
   homepage 'http://fontfabric.com/signika-font/'
-  license :ofl
 
   font 'Signika/Signika-Bold.ttf'
   font 'Signika/Signika-Light.ttf'

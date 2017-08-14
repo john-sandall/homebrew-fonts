@@ -1,10 +1,11 @@
-cask :v1 => 'font-keania-one' do
-  version '1.003'
-  sha256 '55c6be3d0cdc816c462bccbcc935ef20f560bd7aecbf1b38caed4752b52c14c0'
+cask 'font-keania-one' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/keaniaone/KeaniaOne-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Keania%20One'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/keaniaone/KeaniaOne-Regular.ttf'
+  name 'Keania One'
+  homepage 'http://www.google.com/fonts/specimen/Keania+One'
 
   font 'KeaniaOne-Regular.ttf'
 end

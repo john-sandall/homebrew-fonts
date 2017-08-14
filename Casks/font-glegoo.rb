@@ -1,10 +1,14 @@
-cask :v1 => 'font-glegoo' do
-  version '1.001'
-  sha256 '2a82ec885df640e802ab7e596790b948cbdab9ba0043eed048a5877c91aba7b3'
+cask 'font-glegoo' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/glegoo/Glegoo-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/trunk/ofl/glegoo',
+      using:      :svn,
+      trust_cert: true
+  name 'Glegoo'
   homepage 'http://www.google.com/fonts/specimen/Glegoo'
-  license :ofl
 
+  font 'Glegoo-Bold.ttf'
   font 'Glegoo-Regular.ttf'
 end

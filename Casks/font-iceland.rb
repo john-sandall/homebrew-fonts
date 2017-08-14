@@ -1,10 +1,11 @@
-cask :v1 => 'font-iceland' do
-  version '1.001'
-  sha256 '5b5919189e5d01a6fac79251aaf9fa9565a738c39974cbe13de98ac02ec7fff5'
+cask 'font-iceland' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/iceland/Iceland-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/iceland/Iceland-Regular.ttf'
+  name 'Iceland'
   homepage 'http://www.google.com/fonts/specimen/Iceland'
-  license :ofl
 
   font 'Iceland-Regular.ttf'
 end

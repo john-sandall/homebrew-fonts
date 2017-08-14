@@ -1,10 +1,11 @@
-cask :v1 => 'font-bokor' do
-  version '6.00'
-  sha256 '38cdf211841f75b4e35ed40a017ef46f389b7e87260dc79ef7fcbce448940d53'
+cask 'font-bokor' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/bokor/Bokor.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/bokor/Bokor.ttf'
+  name 'Bokor'
   homepage 'http://www.google.com/fonts/specimen/Bokor'
-  license :ofl
 
   font 'Bokor.ttf'
 end

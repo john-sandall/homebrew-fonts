@@ -1,10 +1,11 @@
-cask :v1 => 'font-arbutus-slab' do
-  version '1.001'
-  sha256 'c17514a190509a94d74c9e99427c44527ff8c7d7dbba5d3e67a35ebf0093bd89'
+cask 'font-arbutus-slab' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/arbutusslab/ArbutusSlab-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Arbutus%20Slab'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/arbutusslab/ArbutusSlab-Regular.ttf'
+  name 'Arbutus Slab'
+  homepage 'http://www.google.com/fonts/specimen/Arbutus+Slab'
 
   font 'ArbutusSlab-Regular.ttf'
 end

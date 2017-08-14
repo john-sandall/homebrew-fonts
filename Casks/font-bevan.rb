@@ -1,10 +1,11 @@
-cask :v1 => 'font-bevan' do
-  version '1.000'
-  sha256 '98cce652180706f654801d591295fa0f9013c676f1d49c98ccd70d8965a86cdf'
+cask 'font-bevan' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/bevan/Bevan.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/bevan/Bevan-Regular.ttf'
+  name 'Bevan'
   homepage 'http://www.google.com/fonts/specimen/Bevan'
-  license :ofl
 
-  font 'Bevan.ttf'
+  font 'Bevan-Regular.ttf'
 end

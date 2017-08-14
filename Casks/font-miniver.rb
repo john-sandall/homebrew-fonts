@@ -1,10 +1,11 @@
-cask :v1 => 'font-miniver' do
-  version '1.000'
-  sha256 '0637ff653a9113189d196434f2055388638083dde397964b83aa2c1800d5b5b7'
+cask 'font-miniver' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/miniver/Miniver-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/miniver/Miniver-Regular.ttf'
+  name 'Miniver'
   homepage 'http://www.google.com/fonts/specimen/Miniver'
-  license :ofl
 
   font 'Miniver-Regular.ttf'
 end

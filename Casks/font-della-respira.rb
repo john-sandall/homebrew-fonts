@@ -1,10 +1,11 @@
-cask :v1 => 'font-della-respira' do
-  version '0.201'
-  sha256 '81518be5b7baf69db5b8e4cff1a447ac2f6bf7a6029ca4963a67e1fb1b0b9218'
+cask 'font-della-respira' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/dellarespira/DellaRespira-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Della%20Respira'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/dellarespira/DellaRespira-Regular.ttf'
+  name 'Della Respira'
+  homepage 'http://www.google.com/fonts/specimen/Della+Respira'
 
   font 'DellaRespira-Regular.ttf'
 end

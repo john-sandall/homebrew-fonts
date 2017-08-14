@@ -1,10 +1,11 @@
-cask :v1 => 'font-monofett' do
-  version '1.000'
-  sha256 '05c225ab2653d62e9aeef6a78693d6c990383d3253daece8bedc5964231d5c52'
+cask 'font-monofett' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/monofett/Monofett.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/monofett/Monofett.ttf'
+  name 'Monofett'
   homepage 'http://www.google.com/fonts/specimen/Monofett'
-  license :ofl
 
   font 'Monofett.ttf'
 end

@@ -1,10 +1,11 @@
-cask :v1 => 'font-asset' do
-  version '1.001'
-  sha256 'f33dba8aace4fc69e0a98750feaf01b336f7dd5acbd7e4833fee7295fa06e1b3'
+cask 'font-asset' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/asset/Asset.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/asset/Asset.ttf'
+  name 'Asset'
   homepage 'http://www.google.com/fonts/specimen/Asset'
-  license :ofl
 
   font 'Asset.ttf'
 end

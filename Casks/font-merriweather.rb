@@ -1,14 +1,14 @@
-cask :v1 => 'font-merriweather' do
-  # version '1.003'
+cask 'font-merriweather' do
   version :latest
   sha256 :no_check
 
+  # github.com/google/fonts was verified as official when first introduced to the cask
   url 'https://github.com/google/fonts/trunk/ofl/merriweather',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Merriweather'
   homepage 'http://www.google.com/fonts/specimen/Merriweather'
-  license :ofl
 
   font 'Merriweather-Black.ttf'
   font 'Merriweather-Bold.ttf'

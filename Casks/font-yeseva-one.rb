@@ -1,10 +1,11 @@
-cask :v1 => 'font-yeseva-one' do
-  version '2.001'
-  sha256 '55189caf70d80501e5befcbe7fec2b0479b876b3e63a81c280203955a744f8c9'
+cask 'font-yeseva-one' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/yesevaone/YesevaOne-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Yeseva%20One'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/yesevaone/YesevaOne-Regular.ttf'
+  name 'Yeseva One'
+  homepage 'http://www.google.com/fonts/specimen/Yeseva+One'
 
   font 'YesevaOne-Regular.ttf'
 end

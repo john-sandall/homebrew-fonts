@@ -1,10 +1,11 @@
-cask :v1 => 'font-acme' do
-  version '1.001'
-  sha256 'c51ba84f4dfd70f0f7c212888121c0785db3ce130ff5cec4360014215852383b'
+cask 'font-acme' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/acme/Acme-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/acme/Acme-Regular.ttf'
+  name 'Acme'
   homepage 'http://www.google.com/fonts/specimen/Acme'
-  license :ofl
 
   font 'Acme-Regular.ttf'
 end

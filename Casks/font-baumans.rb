@@ -1,10 +1,11 @@
-cask :v1 => 'font-baumans' do
-  version '001.001'
-  sha256 '46d4196124065aadec02c628583fbca1abb28ab00255dbe9e5b28437bd85c797'
+cask 'font-baumans' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/baumans/Baumans-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/baumans/Baumans-Regular.ttf'
+  name 'Baumans'
   homepage 'http://www.google.com/fonts/specimen/Baumans'
-  license :ofl
 
   font 'Baumans-Regular.ttf'
 end

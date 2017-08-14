@@ -1,10 +1,11 @@
-cask :v1 => 'font-metamorphous' do
-  version '1.001'
-  sha256 '55939a5664e06807e87fa4af64f52039ead12f002dda8317393fdce2f7ff57fe'
+cask 'font-metamorphous' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/metamorphous/Metamorphous-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/metamorphous/Metamorphous-Regular.ttf'
+  name 'Metamorphous'
   homepage 'http://www.google.com/fonts/specimen/Metamorphous'
-  license :ofl
 
   font 'Metamorphous-Regular.ttf'
 end

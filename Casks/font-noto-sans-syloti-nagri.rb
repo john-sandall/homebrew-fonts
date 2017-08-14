@@ -1,10 +1,11 @@
-cask :v1 => 'font-noto-sans-syloti-nagri' do
+cask 'font-noto-sans-syloti-nagri' do
   version :latest
   sha256 :no_check
 
-  url 'https://www.google.com/get/noto/pkgs/NotoSansSylotiNagri-unhinted.zip'
-  homepage 'http://www.google.com/get/noto'
-  license :apache
+  # noto-website.storage.googleapis.com was verified as official when first introduced to the cask
+  url 'https://noto-website.storage.googleapis.com/pkgs/NotoSansSylotiNagri-unhinted.zip'
+  name 'Noto Sans Syloti Nagri'
+  homepage 'https://www.google.com/get/noto/#sans-sylo'
 
   font 'NotoSansSylotiNagri-Regular.ttf'
 end

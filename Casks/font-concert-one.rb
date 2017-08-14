@@ -1,10 +1,11 @@
-cask :v1 => 'font-concert-one' do
-  version '1.003'
-  sha256 '1651e05fba9a75b10a5c5c5bd83de642cbd47e820a9639a3f1592c8eb5d0342c'
+cask 'font-concert-one' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/concertone/ConcertOne-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Concert%20One'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/concertone/ConcertOne-Regular.ttf'
+  name 'Concert One'
+  homepage 'http://www.google.com/fonts/specimen/Concert+One'
 
   font 'ConcertOne-Regular.ttf'
 end

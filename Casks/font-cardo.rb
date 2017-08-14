@@ -1,10 +1,10 @@
-cask :v1 => 'font-cardo' do
+cask 'font-cardo' do
   version '1.04'
   sha256 '9401db6357cb71fa1f8791323679f81d6b0473d6280a7ec8abdf11b5e52f455f'
 
-  url 'http://scholarsfonts.net/cardo104.zip'
+  url "http://scholarsfonts.net/cardo#{version.no_dots}.zip"
+  name 'Cardo'
   homepage 'http://scholarsfonts.net/cardofnt.html'
-  license :ofl
 
   font 'Cardo104s.ttf'
   font 'Cardoi99.ttf'

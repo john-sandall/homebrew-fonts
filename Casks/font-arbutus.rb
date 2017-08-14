@@ -1,10 +1,11 @@
-cask :v1 => 'font-arbutus' do
-  version '1.002'
-  sha256 'bb0365451e8d111edc1466bab7cfc8decbdfe9c583ba021718bbae8bd06bc930'
+cask 'font-arbutus' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/arbutus/Arbutus-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/arbutus/Arbutus-Regular.ttf'
+  name 'Arbutus'
   homepage 'http://www.google.com/fonts/specimen/Arbutus'
-  license :ofl
 
   font 'Arbutus-Regular.ttf'
 end

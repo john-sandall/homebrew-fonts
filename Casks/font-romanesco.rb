@@ -1,10 +1,11 @@
-cask :v1 => 'font-romanesco' do
-  version '1.000'
-  sha256 '2af822e2e972a6552572667f73fee23adb4f146db97f89edfe6ad722d0c16076'
+cask 'font-romanesco' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/romanesco/Romanesco-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/romanesco/Romanesco-Regular.ttf'
+  name 'Romanesco'
   homepage 'http://www.google.com/fonts/specimen/Romanesco'
-  license :ofl
 
   font 'Romanesco-Regular.ttf'
 end

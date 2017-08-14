@@ -1,15 +1,17 @@
-cask :v1 => 'font-koruri' do
-  version '20141224'
-  sha256 '2de09d84d05955018dd2b053ec912a94edb6320579bacfb96347d5fe8eb13872'
+cask 'font-koruri' do
+  version '20161105,66647'
+  sha256 '78e674e1b884189d60e378897179bec5164fa917c76adb53aa7931fc19a40074'
 
-  # sourceforge.jp is the official download host per the vendor homepage
-  url "http://dl.sourceforge.jp/koruri/62469/Koruri-#{version}.tar.xz"
+  # osdn.jp/koruri was verified as official when first introduced to the cask
+  url "http://dl.osdn.jp/koruri/#{version.after_comma}/Koruri-#{version.before_comma}.tar.xz"
+  appcast 'https://github.com/Koruri/Koruri/releases.atom',
+          checkpoint: 'd41f6f05089049c518a410f963514422003caebed4a4992c1a9207e5cf9c8ad9'
+  name 'Koruri'
   homepage 'http://koruri.lindwurm.biz/'
-  license :apache
 
-  font "Koruri-#{version}/Koruri-Bold.ttf"
-  font "Koruri-#{version}/Koruri-Extrabold.ttf"
-  font "Koruri-#{version}/Koruri-Light.ttf"
-  font "Koruri-#{version}/Koruri-Regular.ttf"
-  font "Koruri-#{version}/Koruri-Semibold.ttf"
+  font "Koruri-#{version.before_comma}/Koruri-Bold.ttf"
+  font "Koruri-#{version.before_comma}/Koruri-Extrabold.ttf"
+  font "Koruri-#{version.before_comma}/Koruri-Light.ttf"
+  font "Koruri-#{version.before_comma}/Koruri-Regular.ttf"
+  font "Koruri-#{version.before_comma}/Koruri-Semibold.ttf"
 end

@@ -1,11 +1,14 @@
-cask :v1 => 'font-dejavu-sans' do
-  version '2.34'
-  sha256 'f6b806b4aa0ea36a8d0f2c46dcd5afa6743773930024e562980c4cd0f9230792'
+cask 'font-dejavu-sans' do
+  version '2.37'
+  sha256 '7576310b219e04159d35ff61dd4a4ec4cdba4f35c00e002a136f00e96a908b0a'
 
-  url "http://downloads.sourceforge.net/sourceforge/dejavu/dejavu-fonts-ttf-#{version}.zip"
-  homepage 'http://dejavu-fonts.org/wiki/Main_Page'
-  license :oss
+  url "https://downloads.sourceforge.net/dejavu/dejavu-fonts-ttf-#{version}.zip"
+  appcast 'https://sourceforge.net/projects/dejavu/rss',
+          checkpoint: 'bc0b3295dee28550f9c2e5d71d5394a9afdddb0a9186db2790b260ae57fdc83a'
+  name 'DejaVu'
+  homepage 'https://sourceforge.net/projects/dejavu/'
 
+  font "dejavu-fonts-ttf-#{version}/ttf/DejaVuMathTeXGyre.ttf"
   font "dejavu-fonts-ttf-#{version}/ttf/DejaVuSans-Bold.ttf"
   font "dejavu-fonts-ttf-#{version}/ttf/DejaVuSans-BoldOblique.ttf"
   font "dejavu-fonts-ttf-#{version}/ttf/DejaVuSans-ExtraLight.ttf"

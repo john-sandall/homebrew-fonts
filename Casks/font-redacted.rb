@@ -1,17 +1,13 @@
-cask :v1 => 'font-redacted' do
-  # version '1.001'
+cask 'font-redacted' do
   version :latest
   sha256 :no_check
 
-  url 'https://github.com/christiannaths/Redacted-Font/trunk/fonts',
-      :using => :svn,
-      :revision   => '41',
-      :trust_cert => true
+  url 'https://github.com/christiannaths/Redacted-Font/archive/old-sources.zip'
+  name 'Redacted'
   homepage 'https://github.com/christiannaths/Redacted-Font'
-  license :ofl
 
-  font 'redacted-regular.ttf'
-  font 'redacted-script-bold.ttf'
-  font 'redacted-script-light.ttf'
-  font 'redacted-script-regular.ttf'
+  font 'Redacted-Font-old-sources/fonts/redacted-regular.ttf'
+  font 'Redacted-Font-old-sources/fonts/redacted-script-bold.ttf'
+  font 'Redacted-Font-old-sources/fonts/redacted-script-light.ttf'
+  font 'Redacted-Font-old-sources/fonts/redacted-script-regular.ttf'
 end

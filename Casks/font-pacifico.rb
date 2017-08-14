@@ -1,10 +1,11 @@
-cask :v1 => 'font-pacifico' do
-  version '1.000'
-  sha256 '4c366cfcd76af6833009883586d8bb6d6ac45a92d149afeeb4c44637f7ad6665'
+cask 'font-pacifico' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/pacifico/Pacifico.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/pacifico/Pacifico-Regular.ttf'
+  name 'Pacifico'
   homepage 'http://www.google.com/fonts/specimen/Pacifico'
-  license :ofl
 
-  font 'Pacifico.ttf'
+  font 'Pacifico-Regular.ttf'
 end

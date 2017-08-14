@@ -1,10 +1,11 @@
-cask :v1 => 'font-petit-formal-script' do
-  version '1.001'
-  sha256 '9b80a05170bac7f372b7e00bc762fe14bafd4abdeb013747b189f66525cffe89'
+cask 'font-petit-formal-script' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/petitformalscript/PetitFormalScript-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Petit%20Formal%20Script'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/petitformalscript/PetitFormalScript-Regular.ttf'
+  name 'Petit Formal Script'
+  homepage 'http://www.google.com/fonts/specimen/Petit+Formal+Script'
 
   font 'PetitFormalScript-Regular.ttf'
 end

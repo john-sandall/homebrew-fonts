@@ -1,10 +1,11 @@
-cask :v1 => 'font-share-tech-mono' do
+cask 'font-share-tech-mono' do
   version '1.002'
-  sha256 '41f6d23db950bf78efe853da3c218443a4bae44cc3f80ecce00dad650ceae40c'
+  sha256 '9ceab1f87414829af259c0f537573ae03ef7dd3147c0b27a36a1a0beb6732677'
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/sharetechmono/ShareTechMono-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/sharetechmono/ShareTechMono-Regular.ttf'
+  name 'Share Tech Mono'
   homepage 'http://www.google.com/fonts/specimen/Share%20Tech%20Mono'
-  license :ofl
 
   font 'ShareTechMono-Regular.ttf'
 end

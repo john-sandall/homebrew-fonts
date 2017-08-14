@@ -1,10 +1,11 @@
-cask :v1 => 'font-uncial-antiqua' do
-  version '1.000'
-  sha256 '33a5128b59d1c95d4f3788164f4ab3a1196f0a982263cb2cd278c47418366766'
+cask 'font-uncial-antiqua' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/uncialantiqua/UncialAntiqua-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Uncial%20Antiqua'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/uncialantiqua/UncialAntiqua-Regular.ttf'
+  name 'Uncial Antiqua'
+  homepage 'http://www.google.com/fonts/specimen/Uncial+Antiqua'
 
   font 'UncialAntiqua-Regular.ttf'
 end

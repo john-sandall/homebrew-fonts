@@ -1,10 +1,11 @@
-cask :v1 => 'font-schoolbell' do
-  version '1.000'
-  sha256 '1a3ae62329871c20600217f19f3472ba8f253c11a7df6cb9a9e6e88ced95ee0a'
+cask 'font-schoolbell' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/apache/schoolbell/Schoolbell.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/apache/schoolbell/Schoolbell.ttf'
+  name 'Schoolbell'
   homepage 'http://www.google.com/fonts/specimen/Schoolbell'
-  license :apache
 
   font 'Schoolbell.ttf'
 end

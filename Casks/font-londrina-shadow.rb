@@ -1,10 +1,11 @@
-cask :v1 => 'font-londrina-shadow' do
-  version '1.001'
-  sha256 '8e8fcd9dfb9dccc934ac9930ebc83a452c3c2049ffbce351b68622fe8308b10a'
+cask 'font-londrina-shadow' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/londrinashadow/LondrinaShadow-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Londrina%20Shadow'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/londrinashadow/LondrinaShadow-Regular.ttf'
+  name 'Londrina Shadow'
+  homepage 'http://www.google.com/fonts/specimen/Londrina+Shadow'
 
   font 'LondrinaShadow-Regular.ttf'
 end

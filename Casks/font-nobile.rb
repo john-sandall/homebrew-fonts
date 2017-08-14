@@ -1,14 +1,14 @@
-cask :v1 => 'font-nobile' do
-  # version '001.001'
+cask 'font-nobile' do
   version :latest
   sha256 :no_check
 
+  # github.com/google/fonts was verified as official when first introduced to the cask
   url 'https://github.com/google/fonts/trunk/ofl/nobile',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Nobile'
   homepage 'http://www.google.com/fonts/specimen/Nobile'
-  license :ofl
 
   font 'Nobile-Bold.ttf'
   font 'Nobile-BoldItalic.ttf'

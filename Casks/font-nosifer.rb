@@ -1,10 +1,11 @@
-cask :v1 => 'font-nosifer' do
-  version '001.002'
-  sha256 '09c5ac35e34dc7a397d5f698b703c5640b59cf93d4d343ebae4f16f3859d09b8'
+cask 'font-nosifer' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/nosifer/Nosifer-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/nosifer/Nosifer-Regular.ttf'
+  name 'Nosifer'
   homepage 'http://www.google.com/fonts/specimen/Nosifer'
-  license :ofl
 
   font 'Nosifer-Regular.ttf'
 end

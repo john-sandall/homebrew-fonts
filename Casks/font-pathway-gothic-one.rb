@@ -1,10 +1,11 @@
-cask :v1 => 'font-pathway-gothic-one' do
-  version '1.001'
-  sha256 '6d5673f8f12bc49599a01a7b5ad14d6f3c7a75e2cc9de1614a91ce43312b21a3'
+cask 'font-pathway-gothic-one' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/pathwaygothicone/PathwayGothicOne-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Pathway%20Gothic%20One'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/pathwaygothicone/PathwayGothicOne-Regular.ttf'
+  name 'Pathway Gothic One'
+  homepage 'http://www.google.com/fonts/specimen/Pathway+Gothic+One'
 
   font 'PathwayGothicOne-Regular.ttf'
 end

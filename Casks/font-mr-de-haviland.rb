@@ -1,10 +1,11 @@
-cask :v1 => 'font-mr-de-haviland' do
-  version '1.000'
-  sha256 '10cd8e34b17a42722dc49d2d62b7fe774595abe34cc89ee1d79663df68ea6089'
+cask 'font-mr-de-haviland' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/mrdehaviland/MrDeHaviland-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Mr%20De%20Haviland'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/mrdehaviland/MrDeHaviland-Regular.ttf'
+  name 'Mr De Haviland'
+  homepage 'http://www.google.com/fonts/specimen/Mr+De+Haviland'
 
   font 'MrDeHaviland-Regular.ttf'
 end

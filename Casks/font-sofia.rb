@@ -1,10 +1,11 @@
-cask :v1 => 'font-sofia' do
-  version '1.001'
-  sha256 '5634c4ecf066fba2fa11645a3c5b41e830ca240e1eeab81e10b9d476101b1eea'
+cask 'font-sofia' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/sofia/Sofia-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/sofia/Sofia-Regular.ttf'
+  name 'Sofia'
   homepage 'http://www.google.com/fonts/specimen/Sofia'
-  license :ofl
 
   font 'Sofia-Regular.ttf'
 end

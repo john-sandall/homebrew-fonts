@@ -1,10 +1,10 @@
-cask :v1 => 'font-charis-sil' do
-  version '4.114'
-  sha256 '92ea75512a0bee4d491ba23fb295fd410707f6e8dedacd1af81e222a3081dd56'
+cask 'font-charis-sil' do
+  version '5.000'
+  sha256 '5e3e5473b30363008c289cc87e2aa584a0916087a63a3f689defa8e0cee09bfd'
 
-  url "https://scripts.sil.org/cms/scripts/render_download.php?format=file&media_id=CharisSIL-#{version}.zip&filename=CharisSIL-#{version}.zip"
-  homepage 'https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=CharisSILfont'
-  license :ofl
+  url "http://software.sil.org/downloads/r/charis/CharisSIL-#{version}.zip"
+  name 'Charis SIL'
+  homepage 'http://software.sil.org/charis/download/'
 
   font "CharisSIL-#{version}/CharisSIL-R.ttf"
   font "CharisSIL-#{version}/CharisSIL-B.ttf"

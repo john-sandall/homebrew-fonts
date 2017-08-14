@@ -1,10 +1,10 @@
-cask :v1 => 'font-courier-prime' do
+cask 'font-courier-prime' do
   version :latest
   sha256 :no_check
 
   url 'http://quoteunquoteapps.com/downloads/courier-prime.zip'
+  name 'Courier Prime'
   homepage 'http://quoteunquoteapps.com/courierprime/'
-  license :unknown
 
   font 'Courier Prime/Courier Prime.ttf'
   font 'Courier Prime/Courier Prime Bold.ttf'

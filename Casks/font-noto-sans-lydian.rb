@@ -1,10 +1,11 @@
-cask :v1 => 'font-noto-sans-lydian' do
+cask 'font-noto-sans-lydian' do
   version :latest
   sha256 :no_check
 
-  url 'https://www.google.com/get/noto/pkgs/NotoSansLydian-unhinted.zip'
-  homepage 'http://www.google.com/get/noto'
-  license :apache
+  # noto-website.storage.googleapis.com was verified as official when first introduced to the cask
+  url 'https://noto-website.storage.googleapis.com/pkgs/NotoSansLydian-unhinted.zip'
+  name 'Noto Sans Lydian'
+  homepage 'https://www.google.com/get/noto/#sans-lydi'
 
   font 'NotoSansLydian-Regular.ttf'
 end

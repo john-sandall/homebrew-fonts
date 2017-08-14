@@ -1,10 +1,11 @@
-cask :v1 => 'font-aguafina-script' do
-  version '1.000'
-  sha256 'aeb15c85cdf53fe9ad218279bdbc19ab481faa9de0523568b3aad77914086bd9'
+cask 'font-aguafina-script' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/aguafinascript/AguafinaScript-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Aguafina%20Script'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/aguafinascript/AguafinaScript-Regular.ttf'
+  name 'Aguafina Script'
+  homepage 'http://www.google.com/fonts/specimen/Aguafina+Script'
 
   font 'AguafinaScript-Regular.ttf'
 end

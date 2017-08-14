@@ -1,14 +1,14 @@
-cask :v1 => 'font-cousine' do
-  # version '1.21'
+cask 'font-cousine' do
   version :latest
   sha256 :no_check
 
+  # github.com/google/fonts was verified as official when first introduced to the cask
   url 'https://github.com/google/fonts/trunk/apache/cousine',
-      :using      => :svn,
-      :revision   => '47',
-      :trust_cert => true
+      using:      :svn,
+      revision:   '47',
+      trust_cert: true
+  name 'Cousine'
   homepage 'http://www.google.com/fonts/specimen/Cousine'
-  license :apache
 
   font 'Cousine-Regular.ttf'
   font 'Cousine-Bold.ttf'

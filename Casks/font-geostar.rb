@@ -1,10 +1,11 @@
-cask :v1 => 'font-geostar' do
-  version '1.002'
-  sha256 '891b92c124bbe4ac006c0b8b7402215486b7cb7951488178f415694a5898d12b'
+cask 'font-geostar' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/geostar/Geostar-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/geostar/Geostar-Regular.ttf'
+  name 'Geostar'
   homepage 'http://www.google.com/fonts/specimen/Geostar'
-  license :ofl
 
   font 'Geostar-Regular.ttf'
 end

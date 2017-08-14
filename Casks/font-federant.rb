@@ -1,10 +1,11 @@
-cask :v1 => 'font-federant' do
-  version '1.010'
-  sha256 '290b0791be935e58ea24c368ba81e683bc7bece71dc6318e4fee6a491734a9d5'
+cask 'font-federant' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/federant/Federant-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/federant/Federant-Regular.ttf'
+  name 'Federant'
   homepage 'http://www.google.com/fonts/specimen/Federant'
-  license :ofl
 
   font 'Federant-Regular.ttf'
 end

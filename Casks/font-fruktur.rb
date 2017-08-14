@@ -1,10 +1,11 @@
-cask :v1 => 'font-fruktur' do
-  version '1.003'
-  sha256 '95579e8aab6891e5e93516e3edeb280e6f32609335705a15b13208a284ba04f1'
+cask 'font-fruktur' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/fruktur/Fruktur-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/fruktur/Fruktur-Regular.ttf'
+  name 'Fruktur'
   homepage 'http://www.google.com/fonts/specimen/Fruktur'
-  license :ofl
 
   font 'Fruktur-Regular.ttf'
 end

@@ -1,10 +1,11 @@
-cask :v1 => 'font-buda' do
-  version '1.002'
-  sha256 'e6ec5aff205dc2109d56a729b2f864ab6578b836715614c228c2bb0280988d81'
+cask 'font-buda' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/buda/Buda-Light.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/buda/Buda-Light.ttf'
+  name 'Buda'
   homepage 'http://www.google.com/fonts/specimen/Buda'
-  license :ofl
 
   font 'Buda-Light.ttf'
 end

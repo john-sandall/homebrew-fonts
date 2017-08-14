@@ -1,10 +1,11 @@
-cask :v1 => 'font-wellfleet' do
-  version '1.002'
-  sha256 '347f3918762c7b61c3b98d57071b03295485bc97b6bfb6c7627bcf365cc3c9e7'
+cask 'font-wellfleet' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/wellfleet/Wellfleet-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/wellfleet/Wellfleet-Regular.ttf'
+  name 'Wellfleet'
   homepage 'http://www.google.com/fonts/specimen/Wellfleet'
-  license :ofl
 
   font 'Wellfleet-Regular.ttf'
 end

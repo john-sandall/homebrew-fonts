@@ -1,10 +1,11 @@
-cask :v1 => 'font-carme' do
-  version '1.000'
-  sha256 '2be32ebe8f62944b1df0f1bf0c76957bda369567b99454d749e51192a393db90'
+cask 'font-carme' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/carme/Carme-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/carme/Carme-Regular.ttf'
+  name 'Carme'
   homepage 'http://www.google.com/fonts/specimen/Carme'
-  license :ofl
 
   font 'Carme-Regular.ttf'
 end

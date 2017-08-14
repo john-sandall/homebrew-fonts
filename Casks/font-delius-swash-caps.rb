@@ -1,10 +1,11 @@
-cask :v1 => 'font-delius-swash-caps' do
-  version '1.002'
-  sha256 '04c102448007265b8a0672590900919d35dfd26c624e543c8c3bfbab9535b642'
+cask 'font-delius-swash-caps' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/deliusswashcaps/DeliusSwashCaps-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Delius%20Swash%20Caps'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/deliusswashcaps/DeliusSwashCaps-Regular.ttf'
+  name 'Delius Swash Caps'
+  homepage 'http://www.google.com/fonts/specimen/Delius+Swash+Caps'
 
   font 'DeliusSwashCaps-Regular.ttf'
 end

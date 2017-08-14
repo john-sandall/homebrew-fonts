@@ -1,10 +1,11 @@
-cask :v1 => 'font-rum-raisin' do
-  version '1.000'
-  sha256 '1fb741013c05995ea48aab1c16bcd141c004ea5c8f9466df9a0e1317d057412e'
+cask 'font-rum-raisin' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/rumraisin/RumRaisin-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Rum%20Raisin'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/rumraisin/RumRaisin-Regular.ttf'
+  name 'Rum Raisin'
+  homepage 'http://www.google.com/fonts/specimen/Rum+Raisin'
 
   font 'RumRaisin-Regular.ttf'
 end

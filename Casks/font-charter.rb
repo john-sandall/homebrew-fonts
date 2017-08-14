@@ -1,10 +1,10 @@
-cask :v1 => 'font-charter' do
-  version '2.0-1.0'
-  sha256 'bcddb75c25406def3d461c6f161ce10f3b32433f5b2109fc0716782ff21285b7'
+cask 'font-charter' do
+  version :latest
+  sha256 :no_check
 
   url 'http://practicaltypography.com/fonts/charter.zip'
+  name 'Charter'
   homepage 'http://practicaltypography.com/charter.html'
-  license :unknown
 
   font 'charter/otf/Charter Bold Italic.otf'
   font 'charter/otf/Charter Bold.otf'

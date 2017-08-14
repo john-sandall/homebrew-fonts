@@ -1,10 +1,11 @@
-cask :v1 => 'font-unna' do
-  version '2.003'
-  sha256 'ac424ce81a707d98a87bbb304273f35d29018e9abb199af0fb76f8989f5ae8a8'
+cask 'font-unna' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/unna/Unna-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/unna/Unna-Regular.ttf'
+  name 'Unna'
   homepage 'http://www.google.com/fonts/specimen/Unna'
-  license :ofl
 
   font 'Unna-Regular.ttf'
 end

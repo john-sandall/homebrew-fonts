@@ -1,10 +1,11 @@
-cask :v1 => 'font-black-ops-one' do
-  version '1.002'
-  sha256 '6b8f73e53eb8608c35c36c6c73d7831e68400fd5105ec363c72caf7cfc46512c'
+cask 'font-black-ops-one' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/blackopsone/BlackOpsOne-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Black%20Ops%20One'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/blackopsone/BlackOpsOne-Regular.ttf'
+  name 'Black Ops One'
+  homepage 'http://www.google.com/fonts/specimen/Black+Ops+One'
 
   font 'BlackOpsOne-Regular.ttf'
 end

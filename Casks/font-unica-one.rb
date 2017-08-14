@@ -1,10 +1,11 @@
-cask :v1 => 'font-unica-one' do
-  version '1.001'
-  sha256 'b61df83878f3bb84956eae118c870aea30b88e7508ce419c00f79e65e4da1add'
+cask 'font-unica-one' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/unicaone/UnicaOne-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Unica%20One'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/unicaone/UnicaOne-Regular.ttf'
+  name 'Unica One'
+  homepage 'http://www.google.com/fonts/specimen/Unica+One'
 
   font 'UnicaOne-Regular.ttf'
 end

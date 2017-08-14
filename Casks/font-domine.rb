@@ -1,14 +1,14 @@
-cask :v1 => 'font-domine' do
-  # version '1.000'
+cask 'font-domine' do
   version :latest
   sha256 :no_check
 
+  # github.com/google/fonts was verified as official when first introduced to the cask
   url 'https://github.com/google/fonts/trunk/ofl/domine',
-      :using      => :svn,
-      :revision   => '50',
-      :trust_cert => true
+      using:      :svn,
+      revision:   '50',
+      trust_cert: true
+  name 'Domine'
   homepage 'http://www.google.com/fonts/specimen/Domine'
-  license :ofl
 
   font 'Domine-Bold.ttf'
   font 'Domine-Regular.ttf'

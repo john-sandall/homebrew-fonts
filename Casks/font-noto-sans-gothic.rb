@@ -1,10 +1,11 @@
-cask :v1 => 'font-noto-sans-gothic' do
+cask 'font-noto-sans-gothic' do
   version :latest
   sha256 :no_check
 
-  url 'https://www.google.com/get/noto/pkgs/NotoSansGothic-unhinted.zip'
-  homepage 'http://www.google.com/get/noto'
-  license :apache
+  # noto-website.storage.googleapis.com was verified as official when first introduced to the cask
+  url 'https://noto-website.storage.googleapis.com/pkgs/NotoSansGothic-unhinted.zip'
+  name 'Noto Sans Gothic'
+  homepage 'https://www.google.com/get/noto/#sans-goth'
 
   font 'NotoSansGothic-Regular.ttf'
 end

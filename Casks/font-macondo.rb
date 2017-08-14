@@ -1,10 +1,11 @@
-cask :v1 => 'font-macondo' do
-  version '2.001'
-  sha256 '1910fe29b60588799474ea6281b59e131e33e96c77bfb80722a4c7f8133db4aa'
+cask 'font-macondo' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/macondo/Macondo-Regular.ttf'
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/macondo/Macondo-Regular.ttf'
+  name 'Macondo'
   homepage 'http://www.google.com/fonts/specimen/Macondo'
-  license :ofl
 
   font 'Macondo-Regular.ttf'
 end

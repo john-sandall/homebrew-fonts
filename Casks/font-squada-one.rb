@@ -1,10 +1,11 @@
-cask :v1 => 'font-squada-one' do
-  version '1.001'
-  sha256 '5b34a1633dbc48db3835d8a847bc475e6e0267121d3435854729ba4b407a05df'
+cask 'font-squada-one' do
+  version :latest
+  sha256 :no_check
 
-  url 'https://googlefontdirectory.googlecode.com/hg-history/67342bc472599b4c32201ee4a002fe59a6447a42/ofl/squadaone/SquadaOne-Regular.ttf'
-  homepage 'http://www.google.com/fonts/specimen/Squada%20One'
-  license :ofl
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/raw/master/ofl/squadaone/SquadaOne-Regular.ttf'
+  name 'Squada One'
+  homepage 'http://www.google.com/fonts/specimen/Squada+One'
 
   font 'SquadaOne-Regular.ttf'
 end
